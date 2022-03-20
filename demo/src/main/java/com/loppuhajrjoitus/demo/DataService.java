@@ -62,7 +62,7 @@ public class DataService {
     }
 
     /**
-     *
+     *  Funktio hakee kaikki tallennetut kurssit
      * @return
      */
     public String getCourses(){
@@ -74,7 +74,7 @@ public class DataService {
     }
 
     /**
-     *
+     *  Kurssin tietojen haku ID:n perusteella
      * @param id
      * @return
      */
@@ -84,7 +84,7 @@ public class DataService {
     }
 
     /**
-     *
+     *  Lisää kurssin annetuilla parametreillä.
      * @param name
      * @param teacher
      * @param credits
@@ -97,7 +97,7 @@ public class DataService {
     }
 
     /**
-     *
+     *  kurssin tietojen päivitys. Funktiossa päivitetään vain sinne annetut parametrit. Aikamoinen purkkaviritys, mutta tällä rahalla ei kummempaa saa
      * @param id
      * @param name
      * @param teacher
@@ -121,7 +121,7 @@ public class DataService {
     }
 
     /**
-     *
+     *  Lisätään opiskelija kurssille. Funktio tarkistaa, että annetut ID:t löytyvät
      * @param courseID
      * @param studentID
      * @return
@@ -143,7 +143,7 @@ public class DataService {
     }
 
     /**
-     *
+     *  Haetaan enrolkoosteesta kaikki kurssille liitetyt opiskelijat
      * @param courseID
      * @return
      */
@@ -159,7 +159,7 @@ public class DataService {
     }
 
     /**
-     *
+     *  Haetaan enrolkoosteesta kurssit, joille opiskelija on ilmoitettu
      * @param studentID
      * @return
      */
