@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OAMK Student Handler</title>
+</head>
+<body>
+    <div>
+        <h1>Manage stundents</h1>
+        <h3>Get list of all students</h3>
+        <form method="get" action="http://localhost:8080/students">
+            <input type="submit" value="Get students">
+        </form>
+        <h3>Get studentdata by student ID</h3>
+        <form method="get" action="http://localhost:8080/student/">
+            <label>Student ID: </label><br>
+            <input type="number" name="ID"><br>
+            <input type="submit" value="Get student">
+        </form>
+        <h3>Add student</h3>
+        <form method="post" action="http://localhost:8080/addstudent">
+            <label>First name: </label><br>
+            <input type="text" name="fName"><br>
+            <label>Last name: </label><br>
+            <input type="text" name="lName"><br>
+            <label>Class: </label><br>
+            <input type="text" name="classID"><br>
+            <input type="submit" value="Add student"><br>
+        </form>
+    </div>
+    <div>
+        <h1>Manage courses</h1>
+        <h3>Get list of all courses</h3>
+        <form method="get" action="http://localhost:8080/courses">
+            <input type="submit" value="Get courses">
+        </form>
+        <h3>Add course</h3>
+        <form method="post" action="http://localhost:8080/addcourse">
+            <label>Course name: </label><br>
+            <input type="text" name="name"><br>
+            <label>Teacher: </label><br>
+            <input type="text" name="teacher"><br>
+            <label>Credits: </label><br>
+            <input type="text" name="credits"><br>
+            <input type="submit" value="Add course"><br>
+        </form>
+        <h3>Edit course</h3>
+        <form method="post" action="http://localhost:8080/editcourse">
+            <label>Course ID: </label><br>
+            <input type="number" name="id"><br>
+            <label>Course name: </label><br>
+            <input type="text" name="name"><br>
+            <label>Teacher: </label><br>
+            <input type="text" name="teacher"><br>
+            <label>Credits: </label><br>
+            <input type="number" name="credits"><br>
+            <p>(Only the entered data will be updated) </p>
+            <input type="submit" value="Edit course"><br>
+        </form>
+    </div>
+    <div>
+        <h1>Enrol management</h1>
+        <h3>Enrol student to course</h3>
+        <form method="post" action="http://localhost:8080/enrol">
+            <label>Course ID: </label><br>
+            <input type="number" name="courseID"><br>
+            <label>Student ID: </label><br>
+            <input type="number" name="studentID"><br>
+            <input type="submit" value="Enrol">
+        </form>
+        <h3>Get students of the course</h3>
+        <form method="get" action="http://localhost:8080/cuorseStudents/">
+            <label>Course ID: </label><br>
+            <input type="number" name="ID"><br>
+            <input type="submit" value="Get students">
+        </form>
+        <h3>Get courses of the student</h3>
+        <form method="get" action="http://localhost:8080/studentsCourses/">
+            <label>Student ID: </label><br>
+            <input type="number" name="ID"><br>
+            <input type="submit" value="Get courses">
+        </form>
+    </div>
+</body>
+</html>

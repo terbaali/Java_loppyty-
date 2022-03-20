@@ -1,0 +1,2 @@
+{"fname":"pekka","lname":"ilosuu","studentID":1,"classID":"1A"}
+{"fname":"Tero","lname":"Vähäsarja","studentID":2,"classID":"TVT21KMO"}
